@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="INTERACTIVE.css">
+<body>
+    <div class="container">
+        <div class="card-illustration">
+            <img id="main-background" src="./images/bg-main-desktop.png" alt="">
+            <div class="card">
+                <div class="front-card-item">
+                    <img src="./images/bg-card-front.png" alt="">
+                    <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+                    <div class="card-details">
+                        <span id="card-number">0000 0000 0000 0000</span>
+                        <div class="card-details-item">
+                            <small id="card-name">Jane Appleseed</small>
+                            <small id="expiry-date">
+                                <span id="month-field">00</span>
+                                <span>/</span>
+                                <span id="year-field">00</span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="back-card-item">
+                    <img src="./images/bg-card-back.png" alt="">
+                    <small id="card-cvc">000</small>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div id="complete-display">
+                <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+                <h3>THANK YOU</h3>
+                <p>We've added your card details</p>
+                <button id="ContinueBtn">Continue</button>
+            </div>
+            <form>
+                <small>CARD HOLDER NAME</small><br><input type="text" name="Card_Name" placeholder="eg. Jane Appleseed" id="card-name-input"><br>
+                <small>CARD NUMBER</small><br><input type="text" name="Card_Number" placeholder="eg. 1234 5678 9123 0000" id="card-number-input"> <br>
+                <small class="number-warning warning-format">Wrong format, numbers only</small>
+                <div class="form-item">
+                    <div class="form-item-exp">
+                        <small>EXP.DATE (MM/YY)</small><br> <br>
+                        <input type="number" name="Month" placeholder="MM" id="expiry-month" >
+                        <input type="number" name="Year"  placeholder="YY" id="expiry-year"><br>
+                        <small class="form-item-exp-warning warning-format"></small>
+                    </div>
+                    <div class="form-item-cvc">
+                        <small>CVC</small><br><br>
+                        <input type="number" name="CVC" max="999"  min="000" placeholder="eg. 123" id="cvc-input"><br>
+                        <small class="cvc-warning warning-format">Can't be blank</small>
+                    </div>
+                </div>
+                <button id="confirmBtn">Confirm</button>
+            </form>
+        </main>
+    </div>
+    <script src="interactive.js"></script>
+</body>
+</html>
