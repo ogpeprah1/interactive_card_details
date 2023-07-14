@@ -207,7 +207,7 @@ input[name="Year"]{
     }
 
     .card-illustration>img{
-        height: 30vh;
+        height: 35vh;
         width: 100vw;
     }
 
@@ -217,7 +217,7 @@ input[name="Year"]{
 
     .card>.front-card-item:first-child{
         z-index: 100;
-        top: 110px;
+        top: 170px;
         left: 20px;
     }
 
@@ -230,7 +230,7 @@ input[name="Year"]{
     }
       
     .card>.back-card-item{
-        top: 10px;
+        top: 50px;
         left: 60px;
     }
 
@@ -269,19 +269,25 @@ input[name="Year"]{
     }
     
     main{
-        margin-top: 50px;
-        height: fit-content;
+        margin-top: 90px;
         width: 100vw;
-        background-color: rgb(255, 255, 255);
+        height: 60vh;
+    }
+
+    form>small{
+        color: hsl(278, 68%, 11%);
+        font-weight: 500;
+        margin-bottom: 10px;
     }
 
     form{
         width: 90%;
-        height: fit-content;
+        height: 90%;
     }
 
     input[name="Month"]{
         width: 25vw;
+        margin-bottom: 50px;
     }
     
     input[name="Year"]{
@@ -290,13 +296,13 @@ input[name="Year"]{
 
     #card-cvc{
         position: absolute;
-        top: 73px;
-        left: 240px;
+        top: 80px;
+        left: 260px;
         width: fit-content;
     }
 
     #complete-display{
-        margin-top: 20px;
+        margin-top: -90px;
         color: black;
         display: none;
         flex-direction: column;

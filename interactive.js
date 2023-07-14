@@ -156,5 +156,16 @@ SubmitBtn.onclick = function(){
 ContinueBtn.onclick = function(){
     CardForm.style.display = "flex";
     CompleteDisplay.style.display = "none"
+    
+    CardNumberField.innerHTML = "0000 0000 0000 0000"
+    CardNumber.value = ''
+    CardNameField.innerHTML = "Jane Appleseed"
+    CardName.value = ''
+    cardCVCField.innerHTML = "00";
+    cardCVC.value = ''
+    expiryMonthField.innerHTML = "00";
+    expiryMonth.value = ''
+    expiryYearField.innerHTML = "00";
+    expiryYear.value = ''
 }
 
