@@ -40,10 +40,12 @@ CardNumber.onkeyup = function(){
 
 
     if(CardNumber.value.length > 19){
+        CardNumber.style.outline = '2px solid red'
         cardNumberWarning.style.display = "inline";
         cardNumberWarning.innerHTML = "Please enter 16 numbers only"
     }
     else{
+        CardNumber.style.outline = '2px solid blue'
         cardNumberWarning.style.display = "none";
     }
 
@@ -68,9 +70,11 @@ expiryMonth.onkeyup = function(){
     if(expiryMonth.value == 0 || expiryMonth.value > 12){
         expiryWarning.style.display = "inline";
         expiryWarning.innerHTML = "Month is not valid";
+        expiryMonth.style.outline = '2px solid red'
     }
     else{
         expiryWarning.style.display = "none"
+        expiryMonth.style.outline = '2px solid blue'
     }
 
 }
@@ -90,9 +94,11 @@ expiryYear.oninput = function(){
         if(expiryYear.value < 1000 || expiryYear.value > 9999){
             expiryWarning.style.display = "inline"
             expiryWarning.innerHTML = "Year is invalid";
+            expiryYear.style.outline = '2px solid red'
         }
         else{
             expiryWarning.style.display = "none"
+            expiryYear.style.outline = '2px solid blue'
         }
     }
 }
@@ -115,9 +121,11 @@ cardCVC.onkeyup = function(){
     if(cardCVC.value < 100 || cardCVC.value > 999){
         cardCVCWarning.style.display = "inline"
         cardCVCWarning.innerHTML = "CVC is invalid";
+        cardCVC.style.outline = '2px solid red'
     }
     else{
         cardCVCWarning.style.display = "none"
+        cardCVC.style.outline = '2px solid blue'
     }
 }
 
